@@ -30,7 +30,6 @@ jQuery(document).ready(function($) {
     $('.slider-wrapper ul li').css('display', 'block');
 
 
-    /*Contact US JS*/
 
     var UsStates = ["AL" , "AK" , "AZ" , "AR" , "CA" , "CO" , "CT" , "DE" , "FL" , "GA" , "HI" , "ID" , "IL" , "IN" , "IA" , "KS" ,
         "KY" , "LA" , "ME" , "MD" , "MA" , "MI" , "MN" , "MS" , "MO" , "MT" , "NE" , "NV" , "NH" , "NJ" , "NM" , "NY" , "NC" , "ND" ,
@@ -146,8 +145,6 @@ jQuery(document).ready(function($) {
             }
         });
 
-        /*********************************************/
-       /* Our Customers page */
       
         $('#ourCustomersBanner').lightSlider({
             gallery:true,
@@ -277,11 +274,6 @@ jQuery(document).ready(function($) {
 
     });
 
-    /*********************************************************************************************************/
-
-    /* Our Facilities
-
-    /*********************************************************************************************************/
 
     var facilityData = [], facilitySlidesCtn = 0;
 
