@@ -1,10 +1,4 @@
-
-
-Bootstrap Sass theme for Wordpress
-=======
-
-
-
+# bourbon, bootstrap, gulp, sass, jQuery, LightSlider, MixItUp JS
     file structure
         --Admin
           --All WP admin panel stuff
