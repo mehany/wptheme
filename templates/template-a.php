@@ -1,8 +1,8 @@
 <?php
-    /*
-     * Template Name: Contact Us
-     * Description: A Page Template with a generic layout.
-     */
+/*
+ * Template Name: template-k
+ * Description: A Page Template with a generic layout.
+ */
 
 get_header();
 
@@ -26,18 +26,7 @@ get_header();
 
                 </div>
                 <div class="col-xs-12 col-md-3 col-lg-3 contact-us-sidebar">
-                    <h2>TO REQUEST NEW SERVICE
-                        PLEASE FILL OUT THE NEW
-                        SERVICE REQUEST FORM</h2>
-                    <?php
-                    ob_start();
-                    dynamic_sidebar('contact-us-sidebar');
-                    $clientsQuoetesContent = ob_get_contents();
-                    //$contents = ob_get_clean();
-                    ob_end_clean();
-                    //print_r($shareMessage);
-                    echo $clientsQuoetesContent;
-                    ?>
+
                 </div>
 
             </div>
@@ -55,7 +44,7 @@ get_header();
 <script type="text/javascript">
     var geocoder;
     var map;
-    var address = "50 Harrison street, hoboken NJ 07030";
+    var address = "100 willow st, Hoboken NJ 07087";
 
     function initialize() {
         geocoder = new google.maps.Geocoder();

@@ -1,6 +1,6 @@
 <?php
 /*
- * Template Name: What We Do
+ * Template Name: template-d
  * Description: A Page Template with a generic layout.
  */
 

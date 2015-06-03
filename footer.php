@@ -1,21 +1,4 @@
-<?php
-        // get our subscription form
-        $subscriptionForm = \SimpleSubscribe\Developers::getSubscriptionForm();
-       
-        // with this we determine modal windows class, since it's hidden automatically,
-        // with every submission, we should make it visible, therefore add class "visible"
-        //$modalWindowVisible = $subscriptionForm->isSubmitted() ? 'visible' : '';
-        // just empty variable to be filled with errors / success message
-        $subscriptionMessage = '';
-        // is it valid or not?
-        if($subscriptionForm->isSubmitted() && $subscriptionForm->isValid()){
-            // it is, this is our messages
-            $subscriptionMessage = 'You have succesfully subscribed, e-mail is on it\'s way!';
-        } elseif($subscriptionForm->isSubmitted() && $subscriptionForm->hasErrors()) {
-            // it's not! get error messages in variable
-            $subscriptionMessage = print_r($subscriptionForm->getAllErrors(), TRUE);
-        }
-    ?>      
+
        <div class="footer">
           <div class="row container">
               <div class="col-md-4 website-legal">
@@ -35,7 +18,7 @@
                       <? /*News Letter container*/ ?>
                       <div class="col-xs-12 col-md-6 subscripe-to-newsletters">
                           <span class="subscripe-error-message"><?php echo $subscriptionMessage; ?></span>
-                          <?php echo $subscriptionForm; ?>
+
                       </div>
                       <? /*Social Icons*/ ?>
                       <div class="col-xs-12 col-md-6 social-box">

@@ -31,7 +31,7 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="<?php bloginfo( 'url' ); ?>" title="<?php bloginfo( 'name' ); ?>">
-              <img src="<?= get_template_directory_uri() ?>/assets/img/logos/wh_linen_logo.png" alt="<?php bloginfo( 'name' ); ?>" />
+             <!-- LOGO -->
           </a>
         </div>
         <div class="navbar-collapse collapse">

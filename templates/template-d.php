@@ -1,6 +1,6 @@
 <?php
 /*
- * Template Name: Who We Are
+ * Template Name: template-f
  * Description: A Page Template with a generic layout.
  */
 

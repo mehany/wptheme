@@ -11,12 +11,6 @@ get_header();
 <?php if ( have_posts() ) : while (have_posts() ) : the_post(); ?>
     <div class="global-wrapper"> <!-- Wrap all content -->
 
-        <!--[IF LT IE 9]><script type="text/javascript" src = "../assets/js/excanvas.js" ></script><![endif]-->
-
-
-
-
-        <canvas id="canvas" width="200" height="400" ></canvas>
 
 
 

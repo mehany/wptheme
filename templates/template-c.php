@@ -1,8 +1,8 @@
 <?php
-    /*
-     * Template Name: Our Customers
-     * Description: A Page Template with a generic layout.
-     */
+/*
+ * Template Name: template-b
+ * Description: A Page Template with a generic layout.
+ */
 
 get_header();
 
