@@ -1,0 +1,3 @@
+# wptheme
+
+   WPTHEME Starter
