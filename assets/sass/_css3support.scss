@@ -1,0 +1,31 @@
+
+
+@mixin rotate($degrees) {
+  -moz-transform: rotate(#{$degrees}deg);  /* FF3.5+ */
+  -o-transform: rotate(#{$degrees}deg);  /* Opera 10.5 */
+  -webkit-transform: rotate(#{$degrees}deg);  /* Saf3.1+, Chrome */
+  -ms-transform: rotate(#{$degrees}deg);  /* IE9 */
+  transform: rotate(#{$degrees}deg);
+
+
+  /* Convert from radians to degrees */
+  $pi: 3.1415926535897;
+  $radians: $degrees * $pi / 180;
+
+  $x: $radians;
+
+  /* IE6–IE9  */
+  filter: progid:DXImageTransform.Microsoft.Matrix(
+                  M11=#{cos($x)}, M12=#{-1*sin($x)},M21=#{sin($x)}, M22=#{cos($x)}, sizingMethod='auto expand');
+  zoom: 1;
+}
+
+@mixin box-shadow($color, $blur, $offset-left: null, $offset-top: null) {
+
+  @if $offset-left == null { $offset-left: 0px }
+  @if $offset-top == null { $offset-top: 0px }
+
+  -moz-box-shadow: $offset-left $offset-top $blur $color; /* FF3.5+ */
+  -webkit-box-shadow: $offset-left $offset-top $blur $color; /* Saf3.0+, Chrome */
+  box-shadow: $offset-left $offset-top $blur $color; /* Opera 10.5, IE9, Chrome 10+ */
+}

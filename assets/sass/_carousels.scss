@@ -1,0 +1,198 @@
+/*
+* carousels are categorized by the parent class
+* To play any slider on a different page, just add
+* the new slider class next to any slider below and
+* use the same children. Overides calls must come after
+* default css
+*/
+
+
+
+
+
+.slider-arrows{
+  background: url("../img/sprites/slider_arrows.png");
+
+}
+
+#carousel-our-customers, #carousel-our-customers-two{
+  height: 306px;
+  width: 100%;
+  border: none;
+  box-shadow: none;
+  display: block;
+  position: relative;
+  border: 1px solid #010101;
+
+  *{
+    background: transparent;
+  }
+
+  .carousel-indicators{
+    li{
+      background: $grey1;
+      width: 8px;
+      height: 8px;
+      border: none;
+      border-radius: 1px;
+      @include transform(rotate(45deg));
+      margin: 0 15px 30px 0;
+      padding: 0;
+    }
+  }
+}
+#carousel-our-customers-two{
+  margin: 0 auto;
+  height: 425px;
+  max-width: 1040px;
+  .carousel-indicators {
+    top: 105%;
+    li {
+      margin: -50px 15px 30px 0;
+    }
+  }
+}
+
+
+.sidebar-quotes-slider::before {
+  content: "";
+  background: transparent;
+  background-size: cover;
+  opacity: 0.10;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.sidebar-quotes-slider > .quote-slide {
+  position: absolute;
+  padding: 0 20px;
+  font-size: 19pt;
+  text-align: center;
+  font-family: $gothamLight;
+  display: none;
+}
+/* Not Used In production */
+.sidebar-quotes-slider > .counter {
+  display: block;
+  top: 18px;
+  left: 18px;
+  z-index: 999;
+}
+
+.sidebar-quotes-slider > .progress {
+  width: 0px;
+  height: 5px;
+  background-color: $darkerWhite;
+  display: block;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.sidebar-quotes-slider > .progress::before {
+  content: '';
+  min-width: 289px;
+  width: 289px;
+  height: 5px;
+  display: block;
+  bottom: 0;
+  left: 0;
+  z-index: 998;
+  background-color: $darkerWhite;
+  opacity: .25;
+}
+/*************/
+.center {
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.open-quote, .close-quote,  {
+  font-family: $gothamLight;
+  color: $darkerWhite;
+  width: 100%;
+  max-width: 289px;
+  position: relative;
+  height: 35px;
+  background: url("../img/sprites/quotes.png") no-repeat center top transparent;
+  display: block;
+}
+
+.open-quote{
+  background-position: center 14%;
+  margin-top: 50px;
+  display: none;
+}
+.close-quote {
+  background-position: center 92%;
+  display: none;
+}
+
+.love {
+  border-radius: 50%;
+  border: 2px solid white;
+  padding: 4px 4px 2px 4px;
+  right: 18px;
+  top: 16px;
+  position: absolute;
+  content: '\f08a';
+  font-family: $gothamLight;;
+  display: block;
+}
+
+.love:hover:before {
+  color: #2ec7bf;
+  content: '\f004';
+}
+.sidebar-widget{
+  position: relative;
+  max-width: 289px;
+
+  .container{
+    border: 1px dashed $green;
+    border-top: none;
+    max-width: 289px;
+
+  }
+  .sidebar-slider-title{
+    color: $white;
+    background: $green;
+    text-align: center;
+    font-family: $gothamBook;
+    font-size: 17px;
+    height: 66px;
+    margin-top: 0;
+    text-transform: uppercase;
+    width: 289px;
+    padding: 15px 0;
+  }
+  .sidebar-quotes-slider {
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    max-width: 100%;
+    width: 289px;
+    min-height: 195px;
+    //min-height: 495px;
+    padding: 0;
+
+  }
+
+  @media all and (max-width: 768px){
+    clear: both;
+    width: 100%;
+    .sidebar-slider-title, .container{
+      max-width: 730px;
+      width: 100%;
+
+    }
+  }
+}

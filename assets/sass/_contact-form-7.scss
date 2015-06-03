@@ -1,0 +1,215 @@
+.contact-form-wrapper{
+  margin: 0;
+  padding: 42px 0 0 0;
+  display: block;
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto;
+
+
+}
+.page-template-page-contact-us-prospective {
+  .row {
+    margin-left: 0px;
+    .col-md-4 {
+      padding: 0;
+      margin: 0;
+      max-width: 345px;
+    }
+    .col-sm-12 {
+      padding: 0;
+      margin: 0;
+      max-width: 345px;
+    }
+    .col-md-4:first-child, .col-md-4:first-child + .col-md-4, .col-sm-12:first-child, .col-sm-12:first-child + .col-sm-12 {
+      margin-right: 8px;
+    }
+    .col-md-4:first-child + .col-md-4 + .col-md-4, .col-sm-12:first-child + .col-sm-12 + .col-sm-12 {
+      background: rgba(109, 191, 127, 0.2);
+      height: 100%;
+      max-width: 335px !important;
+      padding: 25px;
+      .form-group {
+        label:first-child {
+          margin-bottom: 15px;
+        }
+        label:first-child + label {
+          margin-top: 15px;
+        }
+        label {
+          display: block;
+          font-family: $gothamBold;
+          font-size: 15px;
+          color: green;
+        }
+
+      }
+    }
+  }
+}
+.wpcf7-form{
+
+  .wpcf7-form-control-wrap{
+    select{
+      display: none;
+    }
+    .btn-group.custom-select, .custom-select, textarea,  input[type='text']{
+      width: 344px;
+      max-width: 344px;
+      border: 1px solid $grey3;
+      &:active, &:focus{
+        border: 1px solid lighten($grey3, 20);
+      }
+    }
+    input[name='zipCode']{
+      width: 167px;
+    }
+    input[type='text'], .custom-select{
+      background: $darkerWhite;
+      height: 35px ;
+
+      color: $grey2;
+      @include input-placeholder {
+        color: $grey2;
+      }
+      padding: 10px;
+      display: block;
+      line-height: 35px;
+      margin-bottom: 8px;
+    }
+      &[name='zipCode']{
+        float: none;
+        display: inline-block;
+        margin-left: 8px;
+        width: 168px;
+        min-width: 120px;
+
+     }
+
+    input[type='checkbox']{
+
+    }
+    textarea{
+      min-height: 162px ;
+      max-height: 262px ;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      background: $darkerWhite;
+      box-shadow: none;
+      padding: 10px;
+    }
+
+    .states-dropdown ul.dropdown-menu{
+      max-height: 400px !important;
+      overflow-x: hidden;
+      overflow-y: scroll;
+    }
+
+    .wpcf7-list-item{
+      .wpcf7-list-item-label{
+
+      }
+    }
+
+    .wpcf7-list-item.first{
+
+    }
+
+
+
+    .wpcf7-list-item.last{
+
+
+    }
+
+    .wpcf7-response-output{
+
+      &.wpcf7-display-none{
+
+      }
+    }
+  }
+
+  .col-md-4, .col-sm-12{
+    span{
+      width: 100%;
+    }
+  }
+ .row{
+    .btn-group
+    {
+      &.open{
+        .dropdown-toggle{
+          box-shadow: none;
+          background: $darkerWhite;
+          border: none;
+        }
+      }
+    }
+    .custom-select{
+
+      padding: 10px;
+      display: block;
+      line-height: 35px;
+      background: $darkerWhite;
+      padding: 0;
+      margin-bottom: 8px;
+      a{
+        width: 100%;
+        display: block;
+        padding: 0 0 0 10px;
+        color: $grey2;
+        &:hover, &:active, &:focus{
+          color: darken($grey2, 4);
+          text-decoration: none;
+
+        }
+
+      }
+      .caret{
+        float: right;
+        content: "";
+        background: url(../img/sprites/caret.png);
+        width: 30px;
+        height: 10px;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        border: none;
+        margin-top: 15px;
+        &:before, &:after{content: "";}
+      }
+    }
+
+    .states-dropdown
+    {
+      width: 168px;
+      max-width: 168px;
+      min-width: 130px;
+      float: left;
+      display: inline-block;
+      margin-right: 8px;
+
+      &.open{
+        > .dropdown-menu{
+
+          max-height: 400px !important;
+          overflow-x: hidden;
+          overflow-y: scroll;
+        }
+      }
+    }
+    .zipCode{
+      width: 167px;
+      max-width: 100%;
+      min-width: 130px;
+      display: inline-block;
+      input{width: 100%;
+        display: inline-block;}
+    }
+    .dropdown-menu[role="menu"]
+    {
+      width: 100%;
+    }
+  }
+}
+

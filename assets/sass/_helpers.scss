@@ -1,0 +1,18 @@
+.green-text{
+  color: $green;
+  &:hover{
+    color: darken($green, 5);
+    text-decoration: none;
+  }
+
+}
+.grey-text{
+  color: $grey1;
+  &:hover{
+    color: darken($grey1, 5);
+    text-decoration: none;
+  }
+
+}
+.bold{font-family: $gothamBold;}
+.uppercase{text-transform: uppercase;}

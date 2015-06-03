@@ -1,0 +1,366 @@
+/*
+Theme Name: WH linen theme
+Theme URI: http://mehany.io
+Author: cd
+Author URI: http://mehany.io
+Description: Basis template to start
+Version: 1.0
+Licence: GNU General Public Licence v2 or later
+Text domain: WP STARTER KIT
+*/
+.responsive-slider-container {
+  position: relative;
+  max-width: 1340px;
+  height: 306px;
+  display: block;
+  margin: 0 auto;
+}
+.responsive-slider-container .responsive-slider {
+  position: relative;
+  width: 100%;
+  min-height: 306px;
+  display: block;
+  background: rgba(0, 0, 0, 0.2);
+}
+.responsive-slider-container .responsive-slider li {
+  height: 306px;
+  position: relative;
+  width: 100%;
+  display: block;
+  color: #fff;
+  font-size: 40px;
+  font-family: 'Gotham Medium';
+  text-align: center;
+
+}
+.responsive-slider-container .lSAction > a {
+  width: 45px;
+  height: 90px;
+  display: block;
+  top: 50%;
+  background-image: url("assets/img/sprites/slider_arrows.png");
+  cursor: pointer;
+  position: absolute;
+  z-index: 9999;
+  margin-top: -60px;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.35s linear 0s;
+  transition: opacity 0.35s linear 0s;
+}
+.responsive-slider-container .lSAction > .lSNext {
+  background-position: -408px -9px;
+  right: 10px;
+}
+.responsive-slider-container .lSAction > .lSPrev {
+  background-position: -8px -17px;
+  left: 10px;
+}
+.responsive-slider-container .lSSlideOuter .lSPager.lSpg {
+  top: 230px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+.responsive-slider-container .lSSlideOuter .lSPager.lSpg > li {
+  border-radius: 0;
+  width: 8px;
+  height: 8px;
+  border: none;
+  border-radius: 0;
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.70711, M12=-0.70711, M21=0.70711, M22=0.70711);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.70711, M12=-0.70711, M21=0.70711, M22=0.70711)";
+  zoom: 1;
+  margin: 0 15px 30px 0;
+  padding: 0;
+}
+.responsive-slider-container .lSSlideOuter .lSPager.lSpg > li a {
+  border-radius: 0;
+  background: #585d60;
+}
+.responsive-slider-container .lSSlideOuter .lSPager.lSpg > li.active {
+  border-radius: 0;
+}
+.responsive-slider-container .lSSlideOuter .lSPager.lSpg > li.active a {
+  background: #404345;
+}
+
+.responsive-container {
+  position: relative;
+  max-width: 1340px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.responsive-container .customers-slider {
+  max-width: 1038px;
+  margin: 0 auto;
+  display: block;
+  background: rgba(0, 0, 0, 0.2);
+}
+.responsive-container .customers-slider li img {
+  float: left;
+  background-position: center center;
+  width: 717px;
+  height: 425px;
+
+}
+.responsive-container .customers-slider li .open-quote, .responsive-container .customers-slider li .close-quote {
+  font-family: "Gotham Light";
+  color: #f4f4f5;
+  width: 100%;
+  max-width: 321px;
+  position: relative;
+  height: 35px;
+  display: block;
+  opacity: 0.1;
+}
+.responsive-container .customers-slider li .open-quote {
+  background-position: center 14%;
+  margin: 49px 0 15px 0;
+}
+.responsive-container .customers-slider li .close-quote {
+  background-position: center 92%;
+  margin: 15px 0 0 0;
+}
+.responsive-container .customers-slider li p.quote {
+  background: #6a7175;
+  float: none;
+  color: #fff;
+  font-size: 19px;
+  font-family: "Gotham Light";
+  display: inline-block;
+  position: relative;
+  max-width: 321px;
+  min-height: 425px;
+  width: 321px;
+  margin: 0;
+  padding: 0 50px;
+  text-align: center;
+}
+.responsive-container .lSAction > a {
+  width: 45px;
+  height: 90px;
+  display: block;
+  top: 50%;
+  background-image: url("assets/img/sprites/slider_arrows.png");
+  cursor: pointer;
+  position: absolute;
+  z-index: 9999;
+  margin-top: -60px;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.35s linear 0s;
+  transition: opacity 0.35s linear 0s;
+}
+.responsive-container .lSAction > .lSNext {
+  background-position: -408px -9px;
+  right: 67px;
+}
+.responsive-container .lSAction > .lSPrev {
+  background-position: -8px -17px;
+  left: 67px;
+}
+.responsive-container .lSSlideOuter .lSPager.lSpg > li {
+  border-radius: 0;
+  width: 8px;
+  height: 8px;
+  border: none;
+  border-radius: 0;
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.70711, M12=-0.70711, M21=0.70711, M22=0.70711);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.70711, M12=-0.70711, M21=0.70711, M22=0.70711)";
+  zoom: 1;
+  margin: 0 15px 30px 0;
+  padding: 0;
+}
+.responsive-container .lSSlideOuter .lSPager.lSpg > li a {
+  border-radius: 0;
+  background: #585d60;
+}
+.responsive-container .lSSlideOuter .lSPager.lSpg > li.active {
+  border-radius: 0;
+}
+.responsive-container .lSSlideOuter .lSPager.lSpg > li.active a {
+  background: #404345;
+}
+.responsive-container .lSSlideWrapper {
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-left: -65px;
+}
+.responsive-container .lSSlideOuter .lSPager.lSpg, .responsive-container .lSSlideOuter  .lSPager{
+  margin-left: -65px;
+}
+
+
+.page-template-page-who-we-are .footer .container, .page-template-page-what-we-do .footer .container, .page-template-page-our-customers .footer .container,
+.page-template-page-our-facility .footer .container, .page-template-page-contact-us .footer .container,
+.page-template-page-contact-us-prospective .footer .container {
+  padding-top: 45px;
+}
+
+
+.page-template-page-what-we-do .mfp-content {
+  max-width: 900px;
+  height: 260px;
+  padding: 15px;
+  background: #FFFFFF;
+  top: 100px;
+}
+.page-template-page-what-we-do .mfp-content .mfp-close {
+  margin-top: -8px;
+  margin-right: -8px;
+}
+.page-template-page-what-we-do .mfp-content li {
+  width: 100% !important;
+  display: block;
+}
+.page-template-page-what-we-do .mfp-content .mfp-content-right, .page-template-page-what-we-do .mfp-content .mfp-content-left {
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: inline-block;
+  position: relative;
+  width: auto;
+}
+.page-template-page-what-we-do .mfp-content .mfp-content-right {
+  max-width: 481px;
+  float: none;
+  text-align: left;
+}
+.page-template-page-what-we-do .mfp-content .mfp-content-left {
+  max-width: 411px;
+  float: left;
+  margin-right: 15px;
+}
+.page-template-page-what-we-do .mfp-content img {
+  width: 411px;
+  height: 260px;
+  display: block;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+.page-template-page-what-we-do .mfp-content .title {
+  color: #019b4a;
+}
+.page-template-page-what-we-do .mfp-content .bio {
+  color: grey;
+}
+
+.page-template-page-who-we-are .profiles-wrapper {
+  max-width: 1040px;
+  margin: 0 auto;
+  display: block;
+}
+.page-template-page-who-we-are #imageGallery {
+  height: 426px  !important;
+  position: relative;
+  margin: 0 auto;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+.page-template-page-who-we-are #imageGallery li {
+  border: 1px solid #010101;
+  display: none;
+  position: relative;
+  width: 250px !important;
+  height: 192px;
+  margin: 5px 8px 8px 0px;
+}
+.page-template-page-who-we-are #imageGallery li:last-child {
+  margin-right: 0;
+}
+.page-template-page-who-we-are #imageGallery li:first-child {
+  margin-left: 0;
+}
+.page-template-page-who-we-are #imageGallery .hover-text {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: auto;
+  width: 100%;
+  text-align: center;
+  padding-top: 30%;
+  opacity: 0;
+}
+.page-template-page-who-we-are #imageGallery .hover-text:hover {
+  opacity: 1;
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.page-template-page-who-we-are #imageGallery li .bio{display:none;}
+.page-template-page-who-we-are .mfp-content {
+  max-width: 900px;
+  height: 260px;
+  padding: 15px;
+  background: #FFFFFF;
+  top: 100px;
+}
+.page-template-page-who-we-are .mfp-content .mfp-close {
+  margin-top: -8px;
+  margin-right: -8px;
+}
+.page-template-page-who-we-are .mfp-content li {
+  width: 100% !important;
+  display: block;
+}
+.page-template-page-who-we-are .mfp-content .mfp-content-right, .page-template-page-who-we-are .mfp-content .mfp-content-left {
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: inline-block;
+  position: relative;
+  width: auto;
+}
+.page-template-page-who-we-are .mfp-content .mfp-content-right {
+  max-width: 481px;
+  float: none;
+  text-align: left;
+}
+.page-template-page-who-we-are .mfp-content .mfp-content-left {
+  max-width: 411px;
+  float: left;
+  margin-right: 15px;
+}
+.page-template-page-who-we-are .mfp-content img {
+  	width: 411px; 
+	height: 235px;
+	display: block;
+	position: relative;
+	padding: 0;
+	margin: 0;
+	border: 1px dotted #010101;
+}
+.page-template-page-who-we-are .mfp-content .title {
+  color: #019b4a;
+}
+.page-template-page-who-we-are .mfp-content .bio {
+  color: grey;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: ".";    
+    display: block;    
+    height: 0;    
+    overflow: hidden; 
+}
+
+#imageGallery{
+  height:500px;
+}

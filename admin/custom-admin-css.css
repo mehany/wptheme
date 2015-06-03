@@ -1,0 +1,7 @@
+#wpcf-marketing, label[for='wpcf-marketing-hide']{
+    display: none !important; visibility: hidden !important;
+}
+.simple-fields-promote{
+    display: none !important;
+    visibility: hidden !important;
+}
